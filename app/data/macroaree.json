@@ -1,0 +1,370 @@
+[
+  {
+    "id": 13,
+    "count": 23,
+    "description": "",
+    "link": "http://autentica-beauty.local/macroarea/ceretta/",
+    "name": "Ceretta",
+    "slug": "ceretta",
+    "taxonomy": "macroarea",
+    "parent": 0,
+    "meta": [],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/macroaree/13",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/macroaree"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/taxonomies/macroarea"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/servizi?macroaree=13"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "count": 0,
+    "description": "",
+    "link": "http://autentica-beauty.local/macroarea/epilazione-depilazione/",
+    "name": "Epilazione e Depilazione",
+    "slug": "epilazione-depilazione",
+    "taxonomy": "macroarea",
+    "parent": 0,
+    "meta": [],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/macroaree/6",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/macroaree"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/taxonomies/macroarea"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/servizi?macroaree=6"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "count": 13,
+    "description": "",
+    "link": "http://autentica-beauty.local/macroarea/estetica-avanzata/",
+    "name": "Estetica Avanzata",
+    "slug": "estetica-avanzata",
+    "taxonomy": "macroarea",
+    "parent": 0,
+    "meta": [],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/macroaree/14",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/macroaree"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/taxonomies/macroarea"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/servizi?macroaree=14"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "count": 25,
+    "description": "",
+    "link": "http://autentica-beauty.local/macroarea/laser/",
+    "name": "Laser",
+    "slug": "laser",
+    "taxonomy": "macroarea",
+    "parent": 0,
+    "meta": [],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/macroaree/15",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/macroaree"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/taxonomies/macroarea"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/servizi?macroaree=15"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "count": 0,
+    "description": "",
+    "link": "http://autentica-beauty.local/macroarea/make-up/",
+    "name": "Make Up",
+    "slug": "make-up",
+    "taxonomy": "macroarea",
+    "parent": 0,
+    "meta": [],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/macroaree/7",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/macroaree"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/taxonomies/macroarea"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/servizi?macroaree=7"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "count": 2,
+    "description": "",
+    "link": "http://autentica-beauty.local/macroarea/mani/",
+    "name": "Mani",
+    "slug": "mani",
+    "taxonomy": "macroarea",
+    "parent": 0,
+    "meta": [],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/macroaree/4",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/macroaree"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/taxonomies/macroarea"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/servizi?macroaree=4"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 16,
+    "count": 7,
+    "description": "",
+    "link": "http://autentica-beauty.local/macroarea/massaggi/",
+    "name": "Massaggi",
+    "slug": "massaggi",
+    "taxonomy": "macroarea",
+    "parent": 0,
+    "meta": [],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/macroaree/16",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/macroaree"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/taxonomies/macroarea"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/servizi?macroaree=16"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "count": 3,
+    "description": "",
+    "link": "http://autentica-beauty.local/macroarea/piedi/",
+    "name": "Piedi",
+    "slug": "piedi",
+    "taxonomy": "macroarea",
+    "parent": 0,
+    "meta": [],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/macroaree/5",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/macroaree"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/taxonomies/macroarea"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/servizi?macroaree=5"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]

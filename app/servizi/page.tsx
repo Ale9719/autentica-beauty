@@ -1,21 +1,24 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Link from 'next/link';
 import MacroareeList from '@/components/MacroareeList';
 import TargetDropdown from '@/components/TargetDropdown';
-import Link from 'next/link';
 
-async function getMacroaree() {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_WP_URL}/macroaree?per_page=50`, { cache: 'no-store' });
-  return res.ok ? await res.json() : [];
-}
+// Importa i file statici per la modalità DEMO
+import serviziData from '../data/servizi.json';
+import macroareeData from '../data/macroaree.json';
+import targetData from '../data/target.json';
 
-async function getTarget() {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_WP_URL}/target?per_page=50`, { cache: 'no-store' });
-  return res.ok ? await res.json() : [];
-}
+async function fetchData(endpoint: string) {
+  // Se la variabile è attiva, legge i file locali
+  if (process.env.NEXT_PUBLIC_DEMO_MODE === 'true') {
+    if (endpoint === 'macroaree') return macroareeData;
+    if (endpoint === 'target') return targetData;
+    return serviziData;
+  }
 
-async function getServizi() {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_WP_URL}/servizi?per_page=100`, { cache: 'no-store' });
+  // Altrimenti, esegue la chiamata reale a WordPress
+  const res = await fetch(`${process.env.NEXT_PUBLIC_WP_URL}/${endpoint}?per_page=100`, { cache: 'no-store' });
   return res.ok ? await res.json() : [];
 }
 
@@ -29,9 +32,9 @@ export default async function ServiziPage(props: {
   const itemsPerPage = 10;
 
   const [macroaree, targetList, tuttiServizi] = await Promise.all([
-    getMacroaree(),
-    getTarget(),
-    getServizi()
+    fetchData('macroaree'),
+    fetchData('target'),
+    fetchData('servizi')
   ]);
 
   const activeArea = macroaree.find((m: any) => m.slug === activeAreaSlug);
@@ -44,7 +47,6 @@ export default async function ServiziPage(props: {
            (!activeTarget || sTarget.includes(Number(activeTarget.id)));
   });
 
-  
   const totalPages = Math.ceil(serviziFiltrati.length / itemsPerPage);
   const paginatedServizi = serviziFiltrati.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
@@ -66,13 +68,13 @@ export default async function ServiziPage(props: {
         activeTargetSlug={activeTargetSlug} 
       />
 
-        {targetDisponibili.length > 0 && (
+      {targetDisponibili.length > 0 && (
         <TargetDropdown 
-            targets={targetDisponibili} 
-            activeAreaSlug={activeAreaSlug} 
-            activeTargetSlug={activeTargetSlug} 
+          targets={targetDisponibili} 
+          activeAreaSlug={activeAreaSlug} 
+          activeTargetSlug={activeTargetSlug} 
         />
-        )}
+      )}
 
       <div className="grow max-w-4xl mx-auto px-6 mb-24 w-full">
         {paginatedServizi.length > 0 ? (
@@ -85,7 +87,7 @@ export default async function ServiziPage(props: {
                 <li key={s.id} className="flex flex-col md:flex-row md:items-center justify-between border-b border-ab-tortora/20 pb-8 group">
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
-                      <h3 className="text-xl font-sans text-ab-tortora-dark group-hover:text-ab-gold transition-colors">
+                      <h3 className="text-xl font-serif text-ab-tortora-dark group-hover:text-ab-gold transition-colors">
                         {s.title.rendered}
                       </h3>
                       {!activeTargetSlug && tagDelServizio.map((t: any) => (
@@ -130,24 +132,6 @@ export default async function ServiziPage(props: {
           </div>
         )}
       </div>
-
-        <div className="w-full relative pointer-events-none mt-20">
-        <svg 
-            className="w-full h-37.5 text-ab-tortora/10 fill-current" 
-            viewBox="0 0 1440 320" 
-            preserveAspectRatio="none"
-        >
-            <path d="M0,160C320,300,420,300,720,200C1020,100,1200,50,1440,150L1440,320L0,320Z"></path>
-        </svg>
-        
-        <svg 
-            className="w-full h-30 text-white fill-current -mt-30" 
-            viewBox="0 0 1440 320" 
-            preserveAspectRatio="none"
-        >
-            <path d="M0,220C320,350,480,250,720,200C960,150,1200,200,1440,250L1440,320L0,320Z"></path>
-        </svg>
-        </div>
 
       <Footer theme="white" />
     </main>

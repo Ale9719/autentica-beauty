@@ -1,0 +1,915 @@
+[
+  {
+    "id": 90,
+    "date": "2026-06-05T05:01:06",
+    "date_gmt": "2026-06-05T05:01:06",
+    "guid": {
+      "rendered": "http://autentica-beauty.local/?post_type=servizio&#038;p=90"
+    },
+    "modified": "2026-06-05T05:01:06",
+    "modified_gmt": "2026-06-05T05:01:06",
+    "slug": "massaggio-californiano",
+    "status": "publish",
+    "type": "servizio",
+    "link": "http://autentica-beauty.local/servizio/massaggio-californiano/",
+    "title": {
+      "rendered": "Massaggio Californiano"
+    },
+    "content": {
+      "rendered": "",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "featured_media": 0,
+    "template": "",
+    "meta": {
+      "_acf_changed": true
+    },
+    "macroaree": [16],
+    "target": [],
+    "class_list": [
+      "post-90",
+      "servizio",
+      "type-servizio",
+      "status-publish",
+      "hentry",
+      "macroarea-massaggi"
+    ],
+    "acf": {
+      "breve_descrizione": "",
+      "durata": "1h",
+      "prezzo": 50
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/servizi/90",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/servizi"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/types/servizio"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/media?parent=90"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "macroarea",
+          "embeddable": true,
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/macroaree?post=90"
+        },
+        {
+          "taxonomy": "target",
+          "embeddable": true,
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/target?post=90"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 89,
+    "date": "2026-06-05T05:00:37",
+    "date_gmt": "2026-06-05T05:00:37",
+    "guid": {
+      "rendered": "http://autentica-beauty.local/?post_type=servizio&#038;p=89"
+    },
+    "modified": "2026-06-05T05:00:37",
+    "modified_gmt": "2026-06-05T05:00:37",
+    "slug": "massaggio-candle",
+    "status": "publish",
+    "type": "servizio",
+    "link": "http://autentica-beauty.local/servizio/massaggio-candle/",
+    "title": {
+      "rendered": "Massaggio Candle"
+    },
+    "content": {
+      "rendered": "",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "featured_media": 0,
+    "template": "",
+    "meta": {
+      "_acf_changed": true
+    },
+    "macroaree": [16],
+    "target": [],
+    "class_list": [
+      "post-89",
+      "servizio",
+      "type-servizio",
+      "status-publish",
+      "hentry",
+      "macroarea-massaggi"
+    ],
+    "acf": {
+      "breve_descrizione": "",
+      "durata": "1h",
+      "prezzo": 65
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/servizi/89",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/servizi"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/types/servizio"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/media?parent=89"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "macroarea",
+          "embeddable": true,
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/macroaree?post=89"
+        },
+        {
+          "taxonomy": "target",
+          "embeddable": true,
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/target?post=89"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 88,
+    "date": "2026-06-05T05:00:14",
+    "date_gmt": "2026-06-05T05:00:14",
+    "guid": {
+      "rendered": "http://autentica-beauty.local/?post_type=servizio&#038;p=88"
+    },
+    "modified": "2026-06-05T05:00:14",
+    "modified_gmt": "2026-06-05T05:00:14",
+    "slug": "massaggio-parziale",
+    "status": "publish",
+    "type": "servizio",
+    "link": "http://autentica-beauty.local/servizio/massaggio-parziale/",
+    "title": {
+      "rendered": "Massaggio parziale"
+    },
+    "content": {
+      "rendered": "",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "featured_media": 0,
+    "template": "",
+    "meta": {
+      "_acf_changed": true
+    },
+    "macroaree": [16],
+    "target": [],
+    "class_list": [
+      "post-88",
+      "servizio",
+      "type-servizio",
+      "status-publish",
+      "hentry",
+      "macroarea-massaggi"
+    ],
+    "acf": {
+      "breve_descrizione": "",
+      "durata": "30min",
+      "prezzo": 35
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/servizi/88",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/servizi"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/types/servizio"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/media?parent=88"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "macroarea",
+          "embeddable": true,
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/macroaree?post=88"
+        },
+        {
+          "taxonomy": "target",
+          "embeddable": true,
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/target?post=88"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 87,
+    "date": "2026-06-05T04:59:54",
+    "date_gmt": "2026-06-05T04:59:54",
+    "guid": {
+      "rendered": "http://autentica-beauty.local/?post_type=servizio&#038;p=87"
+    },
+    "modified": "2026-06-05T04:59:54",
+    "modified_gmt": "2026-06-05T04:59:54",
+    "slug": "massaggio-anticellulite",
+    "status": "publish",
+    "type": "servizio",
+    "link": "http://autentica-beauty.local/servizio/massaggio-anticellulite/",
+    "title": {
+      "rendered": "Massaggio anticellulite"
+    },
+    "content": {
+      "rendered": "",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "featured_media": 0,
+    "template": "",
+    "meta": {
+      "_acf_changed": true
+    },
+    "macroaree": [16],
+    "target": [],
+    "class_list": [
+      "post-87",
+      "servizio",
+      "type-servizio",
+      "status-publish",
+      "hentry",
+      "macroarea-massaggi"
+    ],
+    "acf": {
+      "breve_descrizione": "",
+      "durata": "50min",
+      "prezzo": 50
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/servizi/87",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/servizi"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/types/servizio"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/media?parent=87"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "macroarea",
+          "embeddable": true,
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/macroaree?post=87"
+        },
+        {
+          "taxonomy": "target",
+          "embeddable": true,
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/target?post=87"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 86,
+    "date": "2026-06-05T04:59:31",
+    "date_gmt": "2026-06-05T04:59:31",
+    "guid": {
+      "rendered": "http://autentica-beauty.local/?post_type=servizio&#038;p=86"
+    },
+    "modified": "2026-06-05T04:59:31",
+    "modified_gmt": "2026-06-05T04:59:31",
+    "slug": "massaggio-decontratturante-schiena",
+    "status": "publish",
+    "type": "servizio",
+    "link": "http://autentica-beauty.local/servizio/massaggio-decontratturante-schiena/",
+    "title": {
+      "rendered": "Massaggio decontratturante schiena"
+    },
+    "content": {
+      "rendered": "",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "featured_media": 0,
+    "template": "",
+    "meta": {
+      "_acf_changed": true
+    },
+    "macroaree": [16],
+    "target": [],
+    "class_list": [
+      "post-86",
+      "servizio",
+      "type-servizio",
+      "status-publish",
+      "hentry",
+      "macroarea-massaggi"
+    ],
+    "acf": {
+      "breve_descrizione": "",
+      "durata": "40min",
+      "prezzo": 35
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/servizi/86",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/servizi"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/types/servizio"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/media?parent=86"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "macroarea",
+          "embeddable": true,
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/macroaree?post=86"
+        },
+        {
+          "taxonomy": "target",
+          "embeddable": true,
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/target?post=86"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 85,
+    "date": "2026-06-05T04:58:42",
+    "date_gmt": "2026-06-05T04:58:42",
+    "guid": {
+      "rendered": "http://autentica-beauty.local/?post_type=servizio&#038;p=85"
+    },
+    "modified": "2026-06-05T04:58:42",
+    "modified_gmt": "2026-06-05T04:58:42",
+    "slug": "massaggio-rilassante",
+    "status": "publish",
+    "type": "servizio",
+    "link": "http://autentica-beauty.local/servizio/massaggio-rilassante/",
+    "title": {
+      "rendered": "Massaggio rilassante"
+    },
+    "content": {
+      "rendered": "",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "featured_media": 0,
+    "template": "",
+    "meta": {
+      "_acf_changed": true
+    },
+    "macroaree": [16],
+    "target": [],
+    "class_list": [
+      "post-85",
+      "servizio",
+      "type-servizio",
+      "status-publish",
+      "hentry",
+      "macroarea-massaggi"
+    ],
+    "acf": {
+      "breve_descrizione": "",
+      "durata": "50min",
+      "prezzo": 40
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/servizi/85",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/servizi"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/types/servizio"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/media?parent=85"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "macroarea",
+          "embeddable": true,
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/macroaree?post=85"
+        },
+        {
+          "taxonomy": "target",
+          "embeddable": true,
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/target?post=85"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 84,
+    "date": "2026-06-05T04:58:18",
+    "date_gmt": "2026-06-05T04:58:18",
+    "guid": {
+      "rendered": "http://autentica-beauty.local/?post_type=servizio&#038;p=84"
+    },
+    "modified": "2026-06-05T04:58:18",
+    "modified_gmt": "2026-06-05T04:58:18",
+    "slug": "massaggio-drenante",
+    "status": "publish",
+    "type": "servizio",
+    "link": "http://autentica-beauty.local/servizio/massaggio-drenante/",
+    "title": {
+      "rendered": "Massaggio drenante"
+    },
+    "content": {
+      "rendered": "",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "featured_media": 0,
+    "template": "",
+    "meta": {
+      "_acf_changed": true
+    },
+    "macroaree": [16],
+    "target": [],
+    "class_list": [
+      "post-84",
+      "servizio",
+      "type-servizio",
+      "status-publish",
+      "hentry",
+      "macroarea-massaggi"
+    ],
+    "acf": {
+      "breve_descrizione": "",
+      "durata": "50min",
+      "prezzo": 40
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/servizi/84",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/servizi"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/types/servizio"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/media?parent=84"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "macroarea",
+          "embeddable": true,
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/macroaree?post=84"
+        },
+        {
+          "taxonomy": "target",
+          "embeddable": true,
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/target?post=84"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 83,
+    "date": "2026-06-05T04:57:29",
+    "date_gmt": "2026-06-05T04:57:29",
+    "guid": {
+      "rendered": "http://autentica-beauty.local/?post_type=servizio&#038;p=83"
+    },
+    "modified": "2026-06-05T04:57:30",
+    "modified_gmt": "2026-06-05T04:57:30",
+    "slug": "laser-total-body-2",
+    "status": "publish",
+    "type": "servizio",
+    "link": "http://autentica-beauty.local/servizio/laser-total-body-2/",
+    "title": {
+      "rendered": "Laser Total Body"
+    },
+    "content": {
+      "rendered": "",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "featured_media": 0,
+    "template": "",
+    "meta": {
+      "_acf_changed": true
+    },
+    "macroaree": [15],
+    "target": [10],
+    "class_list": [
+      "post-83",
+      "servizio",
+      "type-servizio",
+      "status-publish",
+      "hentry",
+      "macroarea-laser",
+      "target-donna"
+    ],
+    "acf": {
+      "breve_descrizione": "Gambe, inguine, glutei, ascelle, braccia",
+      "durata": "1h",
+      "prezzo": 150
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/servizi/83",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/servizi"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/types/servizio"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/media?parent=83"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "macroarea",
+          "embeddable": true,
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/macroaree?post=83"
+        },
+        {
+          "taxonomy": "target",
+          "embeddable": true,
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/target?post=83"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 82,
+    "date": "2026-06-05T04:56:28",
+    "date_gmt": "2026-06-05T04:56:28",
+    "guid": {
+      "rendered": "http://autentica-beauty.local/?post_type=servizio&#038;p=82"
+    },
+    "modified": "2026-06-05T04:56:28",
+    "modified_gmt": "2026-06-05T04:56:28",
+    "slug": "laser-braccia-e-ascelle",
+    "status": "publish",
+    "type": "servizio",
+    "link": "http://autentica-beauty.local/servizio/laser-braccia-e-ascelle/",
+    "title": {
+      "rendered": "Laser braccia e ascelle"
+    },
+    "content": {
+      "rendered": "",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "featured_media": 0,
+    "template": "",
+    "meta": {
+      "_acf_changed": true
+    },
+    "macroaree": [15],
+    "target": [10],
+    "class_list": [
+      "post-82",
+      "servizio",
+      "type-servizio",
+      "status-publish",
+      "hentry",
+      "macroarea-laser",
+      "target-donna"
+    ],
+    "acf": {
+      "breve_descrizione": "",
+      "durata": "45min",
+      "prezzo": 40
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/servizi/82",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/servizi"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/types/servizio"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/media?parent=82"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "macroarea",
+          "embeddable": true,
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/macroaree?post=82"
+        },
+        {
+          "taxonomy": "target",
+          "embeddable": true,
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/target?post=82"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 81,
+    "date": "2026-06-05T04:55:59",
+    "date_gmt": "2026-06-05T04:55:59",
+    "guid": {
+      "rendered": "http://autentica-beauty.local/?post_type=servizio&#038;p=81"
+    },
+    "modified": "2026-06-05T04:56:00",
+    "modified_gmt": "2026-06-05T04:56:00",
+    "slug": "laser-gambe-cosce-inguine",
+    "status": "publish",
+    "type": "servizio",
+    "link": "http://autentica-beauty.local/servizio/laser-gambe-cosce-inguine/",
+    "title": {
+      "rendered": "Laser gambe, cosce, inguine"
+    },
+    "content": {
+      "rendered": "",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "featured_media": 0,
+    "template": "",
+    "meta": {
+      "_acf_changed": true
+    },
+    "macroaree": [15],
+    "target": [10],
+    "class_list": [
+      "post-81",
+      "servizio",
+      "type-servizio",
+      "status-publish",
+      "hentry",
+      "macroarea-laser",
+      "target-donna"
+    ],
+    "acf": {
+      "breve_descrizione": "",
+      "durata": "1h",
+      "prezzo": 95
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/servizi/81",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/servizi"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/types/servizio"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/media?parent=81"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "macroarea",
+          "embeddable": true,
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/macroaree?post=81"
+        },
+        {
+          "taxonomy": "target",
+          "embeddable": true,
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/target?post=81"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]

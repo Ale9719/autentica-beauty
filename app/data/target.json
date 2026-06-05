@@ -1,0 +1,182 @@
+[
+  {
+    "id": 12,
+    "count": 4,
+    "description": "",
+    "link": "http://autentica-beauty.local/target/corpo/",
+    "name": "Corpo",
+    "slug": "corpo",
+    "taxonomy": "target",
+    "meta": [],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/target/12",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/target"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/taxonomies/target"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/servizi?target=12"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "count": 27,
+    "description": "",
+    "link": "http://autentica-beauty.local/target/donna/",
+    "name": "Donna",
+    "slug": "donna",
+    "taxonomy": "target",
+    "meta": [],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/target/10",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/target"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/taxonomies/target"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/servizi?target=10"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "count": 21,
+    "description": "",
+    "link": "http://autentica-beauty.local/target/uomo/",
+    "name": "Uomo",
+    "slug": "uomo",
+    "taxonomy": "target",
+    "meta": [],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/target/9",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/target"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/taxonomies/target"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/servizi?target=9"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "count": 8,
+    "description": "",
+    "link": "http://autentica-beauty.local/target/viso/",
+    "name": "Viso",
+    "slug": "viso",
+    "taxonomy": "target",
+    "meta": [],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/target/11",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/target"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/taxonomies/target"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "http://autentica-beauty.local/wp-json/wp/v2/servizi?target=11"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]
