@@ -4,7 +4,6 @@ import Link from 'next/link';
 import MacroareeList from '@/components/MacroareeList';
 import TargetDropdown from '@/components/TargetDropdown';
 
-// Importa i file statici per la modalità DEMO
 import serviziData from '../data/servizi.json';
 import macroareeData from '../data/macroaree.json';
 import targetData from '../data/target.json';

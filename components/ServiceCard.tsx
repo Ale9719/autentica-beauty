@@ -3,6 +3,8 @@ import { useRef, useState, useEffect, Suspense } from 'react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+const macroareeData = require('../data/macroaree.json');
+
 
 interface WP_Macroarea_Term {
   id: number;
@@ -27,13 +29,19 @@ function MacroareeContent() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const WP_TAX_URL = `${process.env.NEXT_PUBLIC_WP_URL}/macroaree?per_page=20`;
-
     const fetchMacroaree = async () => {
+      setLoading(true);
       try {
-        const res = await fetch(WP_TAX_URL);
-        if (!res.ok) throw new Error("Errore nel recupero delle macroaree");
-        const data: WP_Macroarea_Term[] = await res.json();
+        let data: WP_Macroarea_Term[] = [];
+
+        if (process.env.NEXT_PUBLIC_DEMO_MODE === 'true') {
+          data = macroareeData;
+        } else {
+          const WP_TAX_URL = `${process.env.NEXT_PUBLIC_WP_URL}/macroaree?per_page=20`;
+          const res = await fetch(WP_TAX_URL);
+          if (!res.ok) throw new Error("Errore nel recupero delle macroaree");
+          data = await res.json();
+        }
 
         const mappedAreas = data.map((term) => ({
           id: term.id,
@@ -43,9 +51,9 @@ function MacroareeContent() {
         }));
 
         setMacroareas(mappedAreas);
-        setLoading(false);
       } catch (error) {
         console.error("Errore fetch macroaree:", error);
+      } finally {
         setLoading(false);
       }
     };
