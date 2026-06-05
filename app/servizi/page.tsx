@@ -16,7 +16,6 @@ async function fetchData(endpoint: string) {
     return serviziData;
   }
 
-  // Altrimenti, esegue la chiamata reale a WordPress
   const res = await fetch(`${process.env.NEXT_PUBLIC_WP_URL}/${endpoint}?per_page=100`, { cache: 'no-store' });
   return res.ok ? await res.json() : [];
 }

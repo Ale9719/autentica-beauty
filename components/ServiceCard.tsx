@@ -3,7 +3,7 @@ import { useRef, useState, useEffect, Suspense } from 'react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-const macroareeData = require('../data/macroaree.json');
+const macroareeData = require('@/data/macroaree.json');
 
 
 interface WP_Macroarea_Term {
