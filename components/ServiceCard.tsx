@@ -135,7 +135,7 @@ useEffect(() => {
                     }`}></div>
                   </div>
 
-                  <span className={`text-center font-sans text-[9px] lg:text-[10px] tracking-wide transition-colors duration-300 ${
+                  <span className={`text-center font-sans text-[9px] lg:text-[11px] tracking-wide transition-colors duration-300 ${
                     isSelected ? 'text-ab-gold' : 'text-ab-tortora-dark group-hover:text-ab-gold'
                   }`}>
                     {item.name}
