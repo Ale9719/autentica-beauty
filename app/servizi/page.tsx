@@ -9,7 +9,6 @@ import macroareeData from '../data/macroaree.json';
 import targetData from '../data/target.json';
 
 async function fetchData(endpoint: string) {
-  // Se la variabile è attiva, legge i file locali
   if (process.env.NEXT_PUBLIC_DEMO_MODE === 'true') {
     if (endpoint === 'macroaree') return macroareeData;
     if (endpoint === 'target') return targetData;

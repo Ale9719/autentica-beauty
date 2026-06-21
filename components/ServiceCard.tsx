@@ -3,7 +3,7 @@ import { useRef, useState, useEffect, Suspense } from 'react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-const macroareeData = require('@/data/macroaree.json');
+import macroareeData from '../app/data/macroaree.json';
 
 
 interface WP_Macroarea_Term {
@@ -28,38 +28,37 @@ function MacroareeContent() {
   const [macroareas, setMacroareas] = useState<MappedMacroarea[]>([]);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const fetchMacroaree = async () => {
-      setLoading(true);
-      try {
-        let data: WP_Macroarea_Term[] = [];
+useEffect(() => {
+  const fetchMacroaree = async () => {
+    try {
+      let data: WP_Macroarea_Term[];
 
-        if (process.env.NEXT_PUBLIC_DEMO_MODE === 'true') {
-          data = macroareeData;
-        } else {
-          const WP_TAX_URL = `${process.env.NEXT_PUBLIC_WP_URL}/macroaree?per_page=20`;
-          const res = await fetch(WP_TAX_URL);
-          if (!res.ok) throw new Error("Errore nel recupero delle macroaree");
-          data = await res.json();
-        }
-
-        const mappedAreas = data.map((term) => ({
-          id: term.id,
-          slug: term.slug,
-          name: term.name.toUpperCase(),
-          circleText: term.description ? term.description : term.name.toUpperCase()
-        }));
-
-        setMacroareas(mappedAreas);
-      } catch (error) {
-        console.error("Errore fetch macroaree:", error);
-      } finally {
-        setLoading(false);
+      if (process.env.NEXT_PUBLIC_DEMO_MODE === 'true') {
+        data = macroareeData as WP_Macroarea_Term[];
+      } else {
+        const WP_TAX_URL = `${process.env.NEXT_PUBLIC_WP_URL}/macroaree?per_page=20`;
+        const res = await fetch(WP_TAX_URL);
+        if (!res.ok) throw new Error("Errore nel recupero delle macroaree");
+        data = await res.json();
       }
-    };
 
-    fetchMacroaree();
-  }, []);
+      const mappedAreas = data.map((term) => ({
+        id: term.id,
+        slug: term.slug,
+        name: term.name.toUpperCase(),
+        circleText: term.description ? term.description : term.name.toUpperCase()
+      }));
+
+      setMacroareas(mappedAreas);
+      setLoading(false);
+    } catch (error) {
+      console.error("Errore fetch macroaree:", error);
+      setLoading(false);
+    }
+  };
+
+  fetchMacroaree();
+}, []);
 
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
