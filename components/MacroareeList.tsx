@@ -26,10 +26,10 @@ export default function MacroareeList({
         >
           <div className={`relative flex items-center justify-center w-24 h-24 lg:w-32 lg:h-32 rounded-full bg-ab-cream p-1 border transition-transform duration-300 ${!activeAreaSlug ? 'border-ab-gold scale-105' : 'border-ab-tortora/30'}`}>
             <div className="flex items-center justify-center w-full h-full rounded-full bg-[#D4B3A5] text-center px-2">
-              <span className="font-serif lg:text-[11px] text-white font-semibold">TUTTI</span>
+              <span className="font-serif text-[9px] lg:text-[11px] text-white font-semibold">TUTTI</span>
             </div>
           </div>
-          <span className={`text-center font-sans lg:text-[11px] font-semibold mt-2 ${!activeAreaSlug ? 'text-ab-gold' : 'text-ab-tortora-dark'}`}>TUTTI</span>
+          <span className={`text-center font-sans text-[9px] lg:text-[11px] font-semibold mt-2 ${!activeAreaSlug ? 'text-ab-gold' : 'text-ab-tortora-dark'}`}>TUTTI</span>
         </Link>
 
         {macroaree.map((area: any) => (
