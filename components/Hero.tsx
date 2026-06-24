@@ -1,7 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function Hero() {
+interface HeroProps {
+  titolo?: string;
+  sottotitolo?: string;
+  immagine?: string;
+}
+
+export default function Hero({ titolo, sottotitolo, immagine }: HeroProps) {
   return (
     <section className="relative w-full min-h-[90vh] flex items-center justify-center bg-ab-cream overflow-hidden py-30">
       
@@ -32,13 +38,13 @@ export default function Hero() {
             Autentica Beauty
           </span>
           
-          <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl text-ab-tortora-dark leading-[1.1] mb-6">
-            Riscopri la tua <br />
-            <span className="text-ab-gold">Autentica</span> Bellezza
-          </h1>
+          <h1 
+            className="font-serif text-5xl sm:text-6xl lg:text-7xl text-ab-tortora-dark leading-[1.1] mb-6"
+            dangerouslySetInnerHTML={{ __html: titolo || 'Riscopri la tua Autentica Bellezza' }}
+          />
           
           <p className="font-sans text-ab-tortora-dark/80 text-base sm:text-lg max-w-md lg:max-w-lg mb-10 leading-relaxed">
-            Epilazione laser avanzata con tecnologia MeDioStar® e trattamenti personalizzati per il benessere di viso e corpo.
+            {sottotitolo || 'Epilazione laser avanzata con tecnologia MeDioStar® e trattamenti personalizzati per il benessere di viso e corpo.'}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
@@ -58,14 +64,15 @@ export default function Hero() {
         </div>
 
         <div className="w-full flex justify-center lg:justify-end order-1 lg:order-2">
-          <div className="relative w-full max-w-100max-w-[500px] aspect-4/5 rounded-[2.5rem] overflow-hidden shadow-2xl bg-ab-tortora/10">
+          <div className="relative w-full max-w-[500px] aspect-4/5 rounded-[2.5rem] overflow-hidden shadow-2xl bg-ab-tortora/10">
             <Image
-              src="/placeholder-2.jpg" 
+              src={immagine || '/placeholder-2.jpg'}
               alt="Trattamento estetico presso Autentica Beauty"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover object-center relative z-10"
               priority
+              fetchPriority="high"
+              className="object-cover object-center relative z-10"
             />
             <div className="absolute inset-0 bg-linear-to-t from-ab-tortora-dark/30 to-transparent mix-blend-multiply pointer-events-none z-20"></div>
           </div>

@@ -8,21 +8,66 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { RiInstagramLine, RiFacebookLine, RiPinterestLine } from 'react-icons/ri';
 
 interface MenuItem {
+  id: number;
   title: string;
   url: string;
+  order: number;
 }
 
-const menuItems: MenuItem[] = [
-  { title: 'Home', url: '/' },
-  { title: 'Chi siamo', url: '/chi-siamo' },
-  { title: 'Servizi', url: '/servizi' },
-  { title: 'Contatti', url: '/contatti' },
+const fallbackMenu: MenuItem[] = [
+  { id: 1, title: 'Home', url: '/', order: 1 },
+  { id: 2, title: 'Chi siamo', url: '/chi-siamo', order: 2 },
+  { id: 3, title: 'Servizi', url: '/servizi', order: 3 },
+  { id: 4, title: 'Contatti', url: '/contatti', order: 4 },
 ];
+
+const socialTitles = ['Instagram', 'Facebook', 'Pinterest'];
+
+function toRelativeUrl(url: string): string {
+  try {
+    const parsed = new URL(url);
+    const isExternal = !parsed.hostname.includes('autentica-beauty');
+    if (isExternal) return url;
+    return parsed.pathname.replace(/\/$/, '') || '/';
+  } catch {
+    return url.replace(/\/$/, '') || '/';
+  }
+}
+
+function SocialIcon({ title }: { title: string }) {
+  if (title === 'Instagram') return <RiInstagramLine size={18} />;
+  if (title === 'Facebook') return <RiFacebookLine size={18} />;
+  if (title === 'Pinterest') return <RiPinterestLine size={18} />;
+  return null;
+}
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [menuItems, setMenuItems] = useState<MenuItem[]>(fallbackMenu);
+  const [socialItems, setSocialItems] = useState<MenuItem[]>([]);
   const pathname = usePathname();
+
+  useEffect(() => {
+    const fetchMenu = async () => {
+      try {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_WP_URL?.replace('/wp/v2', '')}/autentica/v1/menu`);
+        if (!res.ok) return;
+        const data: MenuItem[] = await res.json();
+        if (data.length > 0) {
+          const mapped = data.map(item => ({
+            ...item,
+            url: toRelativeUrl(item.url)
+          }));
+          setSocialItems(mapped.filter(item => socialTitles.includes(item.title)));
+          setMenuItems(mapped.filter(item => !socialTitles.includes(item.title)));
+        }
+      } catch {
+        // usa fallback
+      }
+    };
+    fetchMenu();
+  }, []);
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? 'hidden' : 'unset';
@@ -76,7 +121,7 @@ export default function Navbar() {
             {menuItems.map((item) => {
               const isActive = pathname === item.url;
               return (
-                <li key={item.title}>
+                <li key={item.id}>
                   <Link 
                     href={item.url} 
                     className={`group relative text-[11px] uppercase tracking-[0.2em] font-sans font-medium transition-colors duration-300 ${isActive ? 'text-ab-gold' : 'text-ab-tortora-dark hover:text-ab-gold'}`}
@@ -89,12 +134,25 @@ export default function Navbar() {
             })}
           </ul>
 
-          <div className="w-px h-4 bg-ab-tortora-dark/20" />
-
-          <div className="flex gap-5 text-ab-tortora-dark">
-            <a href="#" className="hover:text-ab-gold hover:-translate-y-0.5 transition-all"><RiInstagramLine size={18} /></a>
-            <a href="#" className="hover:text-ab-gold hover:-translate-y-0.5 transition-all"><RiFacebookLine size={18} /></a>
-          </div>
+          {socialItems.length > 0 && (
+            <>
+              <div className="w-px h-4 bg-ab-tortora-dark/20" />
+              <div className="flex gap-5 text-ab-tortora-dark">
+                {socialItems.map((item) => (
+                  <a 
+                    key={item.id}
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={item.title}
+                    className="hover:text-ab-gold hover:-translate-y-0.5 transition-all"
+                  >
+                    <SocialIcon title={item.title} />
+                  </a>
+                ))}
+              </div>
+            </>
+          )}
         </div>
       </nav>
 
@@ -113,7 +171,7 @@ export default function Navbar() {
                 const isActive = pathname === item.url;
                 return (
                   <motion.li 
-                    key={item.title}
+                    key={item.id}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: i * 0.1 + 0.2, duration: 0.5 }}
@@ -129,6 +187,23 @@ export default function Navbar() {
                 );
               })}
             </ul>
+
+            {socialItems.length > 0 && (
+              <div className="flex gap-6 text-ab-tortora-dark">
+                {socialItems.map((item) => (
+                  <a
+                    key={item.id}
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={item.title}
+                    className="hover:text-ab-gold transition-colors"
+                  >
+                    <SocialIcon title={item.title} />
+                  </a>
+                ))}
+              </div>
+            )}
           </motion.div>
         )}
       </AnimatePresence>

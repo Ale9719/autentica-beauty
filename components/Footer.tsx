@@ -21,7 +21,7 @@ export default function Footer({ theme = "default" }: { theme?: "default" | "whi
           />
         </Link>
         <p className="font-sans font-light text-ab-tortora-dark/70 tracking-[0.3em] uppercase text-[9px] lg:text-[10px] mb-12">
-          Centro di estetica avanzata • Sardegna
+          Centro di estetica avanzata • Borore, Sardegna
         </p>
 
         <nav className="flex flex-wrap justify-center gap-8 lg:gap-12 mb-12">
@@ -56,7 +56,8 @@ export default function Footer({ theme = "default" }: { theme?: "default" | "whi
           </div>
           
           <p className="order-1 md:order-2">
-            © {new Date().getFullYear()} Autentica Beauty.
+            © {new Date().getFullYear()} Autentica Beauty.<br/>
+            <span className="text-ab-tortora-dark/40">P.IVA 01670540911</span>
           </p>
           
           <p className="order-3 flex gap-1">

@@ -7,6 +7,29 @@ import TargetDropdown from '@/components/TargetDropdown';
 import serviziData from '../data/servizi.json';
 import macroareeData from '../data/macroaree.json';
 import targetData from '../data/target.json';
+import Breadcrumb from '@/components/Breadcrumb';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Trattamenti e Servizi | Autentica Beauty — Centro Estetico Borore',
+  description: 'Scopri tutti i trattamenti di Autentica Beauty a Borore: epilazione laser MeDioStar®, ceretta, estetica avanzata, massaggi californiano e drenante, trattamenti viso, make up e molto altro.',
+  keywords: 'trattamenti estetici Borore, epilazione laser Borore, ceretta Borore, massaggi Borore, estetica avanzata Sardegna, massaggio californiano Borore, trattamenti viso Nuoro, listino prezzi estetica Borore',
+  openGraph: {
+    title: 'Trattamenti e Servizi | Autentica Beauty — Borore',
+    description: 'Epilazione laser, ceretta, massaggi, estetica avanzata e make up a Borore, Sardegna. Scopri tutti i trattamenti e prenota la tua consulenza.',
+    url: 'https://autenticabeauty.it/servizi',
+    siteName: 'Autentica Beauty',
+    locale: 'it_IT',
+    type: 'website',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: 'https://autenticabeauty.it/servizi',
+  }
+};
 
 async function fetchData(endpoint: string) {
   if (process.env.NEXT_PUBLIC_DEMO_MODE === 'true') {
@@ -54,7 +77,7 @@ export default async function ServiziPage(props: {
   return (
     <main className="min-h-screen bg-ab-cream flex flex-col">
       <Navbar />
-      
+      <Breadcrumb />
       <div className="pt-32 pb-2 px-6 text-center">
         <h1 className="font-serif text-5xl lg:text-6xl text-ab-tortora-dark mb-4">I Nostri Trattamenti</h1>
       </div>

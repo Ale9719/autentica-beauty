@@ -24,7 +24,25 @@ function SingleCard({ icon, title, text, delay = 0 }: { icon: React.ReactNode, t
   );
 }
 
-export default function PillarCard() {
+interface PillarCardProps {
+  titoloSezione?: string;
+  pillar1Titolo?: string;
+  pillar1Testo?: string;
+  pillar2Titolo?: string;
+  pillar2Testo?: string;
+  pillar3Titolo?: string;
+  pillar3Testo?: string;
+}
+
+export default function PillarCard({
+  titoloSezione,
+  pillar1Titolo,
+  pillar1Testo,
+  pillar2Titolo,
+  pillar2Testo,
+  pillar3Titolo,
+  pillar3Testo,
+}: PillarCardProps) {
   return (
     <section className="relative z-10 pb-32 lg:pb-40 bg-white">
       
@@ -40,16 +58,31 @@ export default function PillarCard() {
           <span className="text-[10px] uppercase tracking-[0.4em] text-ab-gold font-semibold block mb-4">
             Il Metodo
           </span>
-          <h2 className="font-serif text-4xl lg:text-5xl text-ab-tortora-dark leading-tight">
-            I tre pilastri del <br/>
-            <em className="italic font-light text-ab-gold">tuo benessere.</em>
-          </h2>
+          <h2 
+            className="font-serif text-4xl lg:text-5xl text-ab-tortora-dark leading-tight"
+            dangerouslySetInnerHTML={{ __html: titoloSezione || 'I tre pilastri del tuo benessere.' }}
+          />
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-12 lg:gap-y-0 relative z-20">
-          <SingleCard delay={0.1} icon={<Sparkles size={28} strokeWidth={1.5} />} title="Analisi Dermo-visiva" text="Iniziamo ogni percorso con uno studio profondo dei tessuti per garantirti risultati reali e duraturi." />
-          <SingleCard delay={0.3} icon={<Waves size={28} strokeWidth={1.5} />} title="Tecnologie Avanzate" text="Utilizziamo solo sistemi certificati MeDioStar® per un'epilazione laser efficace e sicura." />
-          <SingleCard delay={0.5} icon={<Leaf size={28} strokeWidth={1.5} />} title="Rituali su Misura" text="Ogni trattamento è cucito sulle tue esigenze biologiche e sui tuoi ritmi di vita." />
+          <SingleCard 
+            delay={0.1} 
+            icon={<Sparkles size={28} strokeWidth={1.5} />} 
+            title={pillar1Titolo || 'Analisi Dermo-visiva'} 
+            text={pillar1Testo || 'Iniziamo ogni percorso con uno studio profondo dei tessuti per garantirti risultati reali e duraturi.'} 
+          />
+          <SingleCard 
+            delay={0.3} 
+            icon={<Waves size={28} strokeWidth={1.5} />} 
+            title={pillar2Titolo || 'Tecnologie Avanzate'} 
+            text={pillar2Testo || 'Utilizziamo solo sistemi certificati MeDioStar® per un\'epilazione laser efficace e sicura.'} 
+          />
+          <SingleCard 
+            delay={0.5} 
+            icon={<Leaf size={28} strokeWidth={1.5} />} 
+            title={pillar3Titolo || 'Rituali su Misura'} 
+            text={pillar3Testo || 'Ogni trattamento è cucito sulle tue esigenze biologiche e sui tuoi ritmi di vita.'} 
+          />
         </div>
 
       </div>

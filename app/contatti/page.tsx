@@ -2,22 +2,66 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 import { AiOutlineInstagram, AiOutlineFacebook, AiOutlineMail, AiOutlinePhone, AiOutlineEnvironment, AiOutlineClockCircle } from 'react-icons/ai';
+import Breadcrumb from '@/components/Breadcrumb';
+import type { Metadata } from 'next';
 
-export default function ContattiPage() {
+export const metadata: Metadata = {
+  title: 'Contatti | Autentica Beauty — Via Solferino 1, Borore (NU)',
+  description: 'Contatta Autentica Beauty a Borore (NU), Via Solferino 1. Tel: +39 344 776 1787. Aperto lun-ven 10-19, sab 9-13. Prenota il tuo trattamento estetico o la tua consulenza laser.',
+  keywords: 'contatti Autentica Beauty, centro estetico Borore indirizzo, prenotare epilazione laser Borore, estetica Borore Nuoro telefono',
+  openGraph: {
+    title: 'Contatti | Autentica Beauty — Borore (NU)',
+    description: 'Autentica Beauty, Via Solferino 1, Borore (NU). Prenota la tua consulenza o trattamento estetico. Tel: +39 344 776 1787.',
+    url: 'https://autenticabeauty.it/contatti',
+    siteName: 'Autentica Beauty',
+    locale: 'it_IT',
+    type: 'website',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: 'https://autenticabeauty.it/contatti',
+  }
+};
+async function getContattiData() {
+  try {
+    const res = await fetch(
+      `${process.env.NEXT_PUBLIC_WP_URL}/pages/161`,
+      { cache: 'no-store' }
+    );
+    if (!res.ok) return null;
+    const data = await res.json();
+    return data.acf_fields || null;
+  } catch {
+    return null;
+  }
+}
+
+export default async function ContattiPage() {
+  const acf = await getContattiData();
+
   const orari = [
-    { giorno: "Lunedì", orario: "10 - 19" },
-    { giorno: "Martedì", orario: "10 - 19" },
-    { giorno: "Mercoledì", orario: "10 - 19" },
-    { giorno: "Giovedì", orario: "10 - 19" },
-    { giorno: "Venerdì", orario: "10 - 19" },
-    { giorno: "Sabato", orario: "9 - 13" },
-    { giorno: "Domenica", orario: "Chiuso" },
+    { giorno: "Lunedì", orario: acf?.orario_lunedi || "10 - 19" },
+    { giorno: "Martedì", orario: acf?.orario_martedi || "10 - 19" },
+    { giorno: "Mercoledì", orario: acf?.orario_mercoledi || "10 - 19" },
+    { giorno: "Giovedì", orario: acf?.orario_giovedi || "10 - 19" },
+    { giorno: "Venerdì", orario: acf?.orario_venerdi || "10 - 19" },
+    { giorno: "Sabato", orario: acf?.orario_sabato || "9 - 13" },
+    { giorno: "Domenica", orario: acf?.orario_domenica || "Chiuso" },
   ];
+
+  const telefono = acf?.telefono || "+39 344 776 1787";
+  const email = acf?.email || "info@autenticabeauty.it";
+  const indirizzo = acf?.indirizzo || "Via Solferino, 1 - 08016 Borore (NU)";
+  const instagram = acf?.instagram || null;
+  const facebook = acf?.facebook || null;
 
   return (
     <main className="min-h-screen bg-white relative">
       <Navbar />
-
+      <Breadcrumb />
       <section className="pt-40 pb-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="mb-20">
@@ -34,7 +78,7 @@ export default function ContattiPage() {
                     <AiOutlineEnvironment className="text-ab-gold"/> Il Centro
                   </h3>
                   <p className="font-sans text-base text-ab-tortora-dark leading-relaxed">
-                    Via Solferino, 1<br /> 08016 Borore (NU)
+                    {indirizzo}
                   </p>
                   <div className="mt-6">
                     <iframe
@@ -67,17 +111,31 @@ export default function ContattiPage() {
               <div className="border-t border-ab-tortora/10 pt-10">
                 <h3 className="font-serif text-2xl text-ab-tortora-dark mb-8">Contatti</h3>
                 <div className="space-y-6">
-                  <Link href="tel:+393447761787" className="flex items-center gap-4 text-base text-ab-tortora-dark hover:text-ab-gold transition-colors">
-                    <AiOutlinePhone className='text-ab-tortora' size={24}/> <span>+39 344 776 1787</span>
+                  <Link href={`tel:${telefono.replace(/\s/g, '')}`} className="flex items-center gap-4 text-base text-ab-tortora-dark hover:text-ab-gold transition-colors">
+                    <AiOutlinePhone className='text-ab-tortora' size={24}/> <span>{telefono}</span>
                   </Link>
-                  <Link href="mailto:info@autenticabeauty.it" className="flex items-center gap-4 text-base text-ab-tortora-dark hover:text-ab-gold transition-colors">
-                    <AiOutlineMail className='text-ab-tortora' size={24}/> <span>info@autenticabeauty.it</span>
+                  <Link href={`mailto:${email}`} className="flex items-center gap-4 text-base text-ab-tortora-dark hover:text-ab-gold transition-colors">
+                    <AiOutlineMail className='text-ab-tortora' size={24}/> <span>{email}</span>
                   </Link>
                 </div>
-                <div className="flex gap-8 mt-12">
-                  <Link href="#" className="text-ab-tortora-dark hover:text-ab-gold transition-all hover:scale-110"><AiOutlineInstagram size={32} /></Link>
-                  <Link href="#" className="text-ab-tortora-dark hover:text-ab-gold transition-all hover:scale-110"><AiOutlineFacebook size={32} /></Link>
-                </div>
+
+                {(instagram || facebook) && (
+                  <div className="mt-12">
+                    <h3 className="font-serif text-2xl text-ab-tortora-dark mb-8">I Nostri Social</h3>
+                    <div className="flex gap-8">
+                      {instagram && (
+                        <Link href={instagram} target="_blank" className="text-ab-tortora-dark hover:text-ab-gold transition-all hover:scale-110">
+                          <AiOutlineInstagram size={32} />
+                        </Link>
+                      )}
+                      {facebook && (
+                        <Link href={facebook} target="_blank" className="text-ab-tortora-dark hover:text-ab-gold transition-all hover:scale-110">
+                          <AiOutlineFacebook size={32} />
+                        </Link>
+                      )}
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
 
