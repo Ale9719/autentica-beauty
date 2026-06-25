@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Chi Siamo | Autentica Beauty — Centro Estetico a Borore',
     description: 'Un rifugio dedicato alla cura di sé a Borore, Sardegna. Alta tecnologia laser e rituali su misura per la tua naturale bellezza.',
-    url: 'https://autenticabeauty.it/chi-siamo',
+    url: 'https://www.autenticabeauty-fp.it/chi-siamo',
     siteName: 'Autentica Beauty',
     locale: 'it_IT',
     type: 'website',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: 'https://autenticabeauty.it/chi-siamo',
+    canonical: 'https://www.autenticabeauty-fp.it/chi-siamo',
   }
 };
 

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     template: '%s | Autentica Beauty',
   },
   description: 'Centro estetico a Borore specializzato in epilazione laser MeDioStar®, trattamenti viso e corpo, ceretta e massaggi.',
-  metadataBase: new URL('https://autenticabeauty.it'),
+  metadataBase: new URL('https://www.autenticabeauty-fp.it'),
 };
 
 export default function RootLayout({

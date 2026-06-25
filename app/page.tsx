@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Autentica Beauty | Centro Estetico a Borore, Sardegna',
     description: 'Epilazione laser MeDioStar®, trattamenti viso e corpo personalizzati a Borore, Sardegna. Prenota la tua consulenza.',
-    url: 'https://autenticabeauty.it',
+    url: 'https://www.autenticabeauty-fp.it',
     siteName: 'Autentica Beauty',
     locale: 'it_IT',
     type: 'website',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: 'https://autenticabeauty.it',
+    canonical: 'https://www.autenticabeauty-fp.it',
   }
 };
 async function getHomeData() {

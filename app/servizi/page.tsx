@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Trattamenti e Servizi | Autentica Beauty — Borore',
     description: 'Epilazione laser, ceretta, massaggi, estetica avanzata e make up a Borore, Sardegna. Scopri tutti i trattamenti e prenota la tua consulenza.',
-    url: 'https://autenticabeauty.it/servizi',
+    url: 'https://www.autenticabeauty-fp.it/servizi',
     siteName: 'Autentica Beauty',
     locale: 'it_IT',
     type: 'website',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: 'https://autenticabeauty.it/servizi',
+    canonical: 'https://www.autenticabeauty-fp.it/servizi',
   }
 };
 

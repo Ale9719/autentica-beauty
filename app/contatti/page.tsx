@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Contatti | Autentica Beauty — Borore (NU)',
     description: 'Autentica Beauty, Via Solferino 1, Borore (NU). Prenota la tua consulenza o trattamento estetico. Tel: +39 344 776 1787.',
-    url: 'https://autenticabeauty.it/contatti',
+    url: 'https://www.autenticabeauty-fp.it/contatti',
     siteName: 'Autentica Beauty',
     locale: 'it_IT',
     type: 'website',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: 'https://autenticabeauty.it/contatti',
+    canonical: 'https://www.autenticabeauty-fp.it/contatti',
   }
 };
 async function getContattiData() {
@@ -53,7 +53,7 @@ export default async function ContattiPage() {
   ];
 
   const telefono = acf?.telefono || "+39 344 776 1787";
-  const email = acf?.email || "info@autenticabeauty.it";
+  //const email = acf?.email || "info@autenticabeauty.it";
   const indirizzo = acf?.indirizzo || "Via Solferino, 1 - 08016 Borore (NU)";
   const instagram = acf?.instagram || null;
   const facebook = acf?.facebook || null;
@@ -114,9 +114,9 @@ export default async function ContattiPage() {
                   <Link href={`tel:${telefono.replace(/\s/g, '')}`} className="flex items-center gap-4 text-base text-ab-tortora-dark hover:text-ab-gold transition-colors">
                     <AiOutlinePhone className='text-ab-tortora' size={24}/> <span>{telefono}</span>
                   </Link>
-                  <Link href={`mailto:${email}`} className="flex items-center gap-4 text-base text-ab-tortora-dark hover:text-ab-gold transition-colors">
+                  {/*<Link href={`mailto:${email}`} className="flex items-center gap-4 text-base text-ab-tortora-dark hover:text-ab-gold transition-colors">
                     <AiOutlineMail className='text-ab-tortora' size={24}/> <span>{email}</span>
-                  </Link>
+                  </Link>*/}
                 </div>
 
                 {(instagram || facebook) && (
