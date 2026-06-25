@@ -8,6 +8,10 @@ const nextConfig: NextConfig = {
         protocol: 'http',
         hostname: 'autentica-beauty.local',
       },
+      {
+        protocol: 'https',
+        hostname: 'www.autenticabeauty-fp.it',
+      },
     ],
     dangerouslyAllowSVG: true,
     unoptimized: process.env.NODE_ENV === 'development',
